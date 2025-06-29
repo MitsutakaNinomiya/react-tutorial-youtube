@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-tutorial-youtube/static/css/main.e6c13ad2.css",
+    "main.js": "/react-tutorial-youtube/static/js/main.dbc69616.js",
+    "index.html": "/react-tutorial-youtube/index.html",
+    "main.e6c13ad2.css.map": "/react-tutorial-youtube/static/css/main.e6c13ad2.css.map",
+    "main.dbc69616.js.map": "/react-tutorial-youtube/static/js/main.dbc69616.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.dbc69616.js"
+  ]
+}
