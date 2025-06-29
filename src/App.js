@@ -1,25 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState, useRef } from "react";
+import TodoList from "./TodoList";
+import { v4 as uuidv4 } from "uuid";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const [todos,setTodos] = useState([]); //useStateはhooksの一つで 管理するために使用される。　todosの変数が変わった時だけページを更新することが出来るので無駄な再レンダリングを防ぐことが出来る。
+
+const todoNameRef = useRef();
+
+
+const handleAddTodo = () => {
+//タスクを追加する。
+const name = todoNameRef.current.value;
+if (!name.trim()) return;//空のタスクは追加できないように
+  setTodos((prevTodos) => {
+return [...prevTodos, {id: uuidv4(), name: name, completed: false }];
+});
+todoNameRef.current.value = null;
+};
+
+const toggleTodo = (id) => {
+const newTodos = [...todos];
+const todo = newTodos.find((todo) => todo.id === id);
+todo.completed = !todo.completed;
+setTodos(newTodos);
+};
+
+
+const handleClear = () => {
+  const newTodos = todos.filter((todo) => !todo.completed);
+  setTodos(newTodos);
+};
+
+return (
+  <>
+    <TodoList todos={todos} toggleTodo={toggleTodo} />
+    <input type="text" ref={todoNameRef} />
+    <button onClick={handleAddTodo}>タスクを追加</button>
+    <button onClick={handleClear}>完了したタスクの削除</button>
+    <div>残りのタスク：{todos.filter((todo) => !todo.completed).length}</div>
+
+    {/* コンポーネントの中にHTML要素を記述することが出来る。 */}
+  </>
+); // ←これがなかった！
+
 }
 
 export default App;
