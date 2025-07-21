@@ -35,7 +35,7 @@ React と JavaScript を用いて作成したシンプルな ToDo アプリで�
 - CSSでのデザイン強化
 - TypeScript化
 
-- https://mitsutakaninomiya.github.io/react-tutorial-youtube/
+Todoアプリはこちら→ https://mitsutakaninomiya.github.io/react-tutorial-youtube/
 
 
 
