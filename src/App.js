@@ -3,7 +3,7 @@ import TodoList from "./TodoList";
 import { v4 as uuidv4 } from "uuid";
 
 function App() {
-const [todos,setTodos] = useState([]); //useStateはhooksの一つで 管理するために使用される。　todosの変数が変わった時だけページを更新することが出来るので無駄な再レンダリングを防ぐことが出来る。
+const [todos,setTodos] = useState([]); //useStateはhooksの一つで 状態を管理するために使用される。　todosの変数が変わった時だけページを更新することが出来るので無駄な再レンダリングを防ぐことが出来る。
 
 const todoNameRef = useRef();
 
