@@ -4,7 +4,7 @@
 未経験からエンジニアを目指している中で、基礎技術や状態管理の理解を深めるために作成しました。
 
 ## 🔧 使用技術
-  <img src="https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB">　<img src="https://img.shields.io/badge/Code-JavaScript-F7DF1E?logo=javascript&logoColor=black">　
+<img src="https://img.shields.io/badge/Code-JavaScript-F7DF1E?logo=javascript&logoColor=black">  <img src="https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB">　　
     
 
 
