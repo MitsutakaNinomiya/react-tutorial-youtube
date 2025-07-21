@@ -1,3 +1,27 @@
+# Todo App ✅
+
+このアプリは、React（TypeScript）を使って作成したToDoリストです。  
+未経験からエンジニアを目指している中で、基礎技術や状態管理の理解を深めるために作成しました。
+
+## 🔧 使用技術
+  <img src="https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB">　<img src="https://img.shields.io/badge/Code-JavaScript-F7DF1E?logo=javascript&logoColor=black">　
+    
+
+
+## 📝 主な機能
+- タスクの追加・削除・編集
+- チェックボックスでの 完了・未完了 の管理
+
+## 💡 学習目的・工夫した点
+- JavaScriptの基礎を復習しつつ、教材を参考にしながらTypeScriptの型定義の理解を深めることを目的に取り組みました。
+- コンポーネントの分割や状態管理（useState等）を意識して実装しました。
+- GitHub Pagesを用いたデプロイも経験し、公開までの流れを学習しました。
+- 今後は、より自分のアイデアを反映させたアプリの自作に挑戦していきます。
+
+## 🚀 デモ
+[▶️ アプリを試す](https://mitsutakaninomiya.github.io/todo-ts/)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
